@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(223, 75, 100);
+    background-image: url(/MIT_3/MIT_3/MIT_3/images/back1.png);
+}
+.left , .right{
+    width: 450px;
+    height: 500px;
+   
+}
+.lh1{
+    font-size: 50px;
+    color: white;
+}
+.lp2{
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+}
+.r1{
+    height: 10px;
+    width: 410px;
+    border: 1px solid black;
+    text-align:center;
+    padding: 20px;
+    color: white;
+    background-color: rgb(24, 24, 191);
+    border: thin;
+    border-radius: 10px;
+    
+}
+.r2{
+    height :390px;
+    width: 450px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: white;
+
+
+}
+.b1 :active{
+    background-color: red;
+}
+.i1{
+    height: 50px;
+    width: 380px;
+    margin-left: 30px;
+    margin-top: 10px;
+ 
+    border-radius: 5px;
+    border:1px solid gray ;
+}
+.i1:hover{
+    border: 1px solid black;
+}
+.b1:hover{
+    border: 1px solid black;
+}
+.b1{
+    background-color: rgb(55, 203, 55);
+    height:50px ;
+    width: 380px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: thin;
+    margin-left: 27px;
+    color: white;
+
+}
+.main{
+    display: flex;
+   justify-content: center;
+   margin-top: 80px;
+   gap: 70px;
+    
+}.pp1{
+    width: 380px;
+    margin-left: 30px;
+    text-align: end;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: red;
+}

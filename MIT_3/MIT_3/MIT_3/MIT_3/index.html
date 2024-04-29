@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  
+  <title>MIT 3 | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+ 
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="left">
+      <p class="lh1">
+        Learn to code by watching others
+      </p>
+      <p class="lp2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla ratione praesentium labore incidunt repellat vel illum numquam. Culpa temporibus laboriosam ullam?
+      </p>
+    </div>
+    <div class="right">
+      <div class="r1">
+        <b>Try it free 7 days</b> then &20/mon. thereafter
+      </div>
+      <div id="did" class="r2">
+        <input id="ii1"  class="i1"  placeholder=" First name">
+        <p  class="pp1" id ="ip1"> </p>
+        <input id="ii2" class="i1" placeholder="   Last name">
+        <p  class="pp1" id ="ip2"> </p>
+        <input id="ii3" class="i1" placeholder="   Email Address">
+        <p  class="pp1"id ="ip3"> </p>
+        <input id="ii4" class="i1" placeholder="   Password">
+        <p  class="pp1" id ="ip4"> </p>
+        <button id="ib1" onclick="change()" class="b1">CLAIM YOUR FREE TRAIL</button>
+      </div>   
+    </div>
+  </div>
+  <script>
+    function change(){
+      var button=document.getElementById("ib1")
+      var input1=document.getElementById("ii1").value
+      var ip1=document.getElementById("ip1")
+      var input2=document.getElementById("ii2").value
+      var ip2=document.getElementById("ip2")
+      var input3=document.getElementById("ii3").value
+      var ip3=document.getElementById("ip3")
+      var input4=document.getElementById("ii2").value
+      var ip4=document.getElementById("ip4")
+      var username=input1+""+input2
+      
+      if(input4===username){
+        ip4.innerHTML="Password and username should not same"
+      }
+     
+      document.getElementById("did").style.height=500;
+      if(input1.length<1)
+      {
+        ip1.innerHTML="Invalid:your First name must not be empty "
+      }
+      if(input2.length<1 ){
+        ip2.textContent="Invalid:your Last name must not be empty "
+      }
+      if(input3.length<1 ){
+        ip3.textContent="Invalid:your mail  must not be empty "
+      }
+      if(input4.length<1 ){
+        ip4.textContent="Invalid:your password  must not be empty "
+      }
+         
+    }
+
+
+
+   
+  </script>
+
+
+</body>
+</html>
